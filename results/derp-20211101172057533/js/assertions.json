@@ -1,0 +1,10 @@
+{
+  "simulation": "Derp",
+  "simulationId": "derp",
+  "start": 1635787257533,
+  "description": "HELLOOOOOOOOOOOOOOOOOO",
+  "scenarios": ["BasicSimulation - GET"],
+  "assertions": [
+
+  ]
+}
