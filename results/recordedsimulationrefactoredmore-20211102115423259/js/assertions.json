@@ -1,0 +1,10 @@
+{
+  "simulation": "RecordedSimulationRefactoredMore",
+  "simulationId": "recordedsimulationrefactoredmore",
+  "start": 1635854063259,
+  "description": "HOPEFULLY THIS WORKS",
+  "scenarios": ["Users", "Admins"],
+  "assertions": [
+
+  ]
+}
