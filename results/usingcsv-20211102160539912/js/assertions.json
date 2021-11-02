@@ -1,0 +1,10 @@
+{
+  "simulation": "UsingCSV",
+  "simulationId": "usingcsv",
+  "start": 1635869139912,
+  "description": "asasas",
+  "scenarios": ["Users", "Admins"],
+  "assertions": [
+
+  ]
+}
