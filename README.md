@@ -12,7 +12,7 @@ Download Gatling open source [ZIP](https://gatling.io/open-source/)
 
 Information on the [prerequisites](https://academy.gatling.io/courses/take/Run-your-first-tests-with-Gatling/lessons/15869639-a3-course-prerequisites)
 
-## How to use
+## How To Use
 
 Verify Java is installed successfully - `javac -version`
 
@@ -68,8 +68,10 @@ Generating reports...
 ================================================================================
 ```
 
-Run this command to launch the recorder - `​​./recorder.sh`
+## Extra Information
 
-B3 in lessons shows how to RECORD but also how to get a HAR file
+Run this command to launch Gatling recorder - `​​./recorder.sh`
+
+[B3](https://academy.gatling.io/courses/take/Run-your-first-tests-with-Gatling/lessons/15869676-b3-gatling-recorder) in lessons shows how to RECORD but also how to get a HAR file
 
 This is the site we used to run tests against - https://computer-database.gatling.io/computers 
