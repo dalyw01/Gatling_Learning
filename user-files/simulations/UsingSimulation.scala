@@ -52,8 +52,14 @@ class UsingSimulation extends Simulation {
 
     val vanillaScenario = scenario("UsingSimulation").exec(Search.search, Browse.browse, Create.create)
 
-    setUp(
-        admins.inject(atOnceUsers(7)), 
-        users.inject(atOnceUsers(7))
+    setUp(admins.inject(atOnceUsers(5)),
+        users.inject(
+            // https://gatling.io/docs/gatling/reference/current/general/simulation_setup/
+            // Should show more of a pyramid of activity in the generated charts
+            nothingFor(5),
+            atOnceUsers(1),
+            rampUsers(5) during(10),
+            constantUsersPerSec(20) during(20)
+            )
         ).protocols(httpProtocol)
 }

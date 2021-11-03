@@ -1,0 +1,10 @@
+{
+  "simulation": "UsingSimulation",
+  "simulationId": "usingsimulation",
+  "start": 1635950027542,
+  "description": "LOL",
+  "scenarios": ["Admins", "Users"],
+  "assertions": [
+
+  ]
+}
