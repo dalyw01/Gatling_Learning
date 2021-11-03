@@ -4,15 +4,13 @@ This is a repo where I play around with Gatling and get a feel for the tool
 
 ## Basic Setup
 
-Good overall explanation without having to register for anything -
-https://www.youtube.com/watch?v=5MYuQBQZ8Ys
+Good overall explanation of Gatling [here](https://www.youtube.com/watch?v=5MYuQBQZ8Ys)
 
-I had to install Java from here - https://www.oracle.com/java/technologies/downloads/#jdk17-mac
+Install Java from [here](https://www.oracle.com/java/technologies/downloads/#jdk17-mac)
 
-Download Gatling ZIP - https://gatling.io/open-source/
+Download Gatling open source [ZIP](https://gatling.io/open-source/)
 
-Register and go here for more on the prerequisites -
-https://academy.gatling.io/courses/take/Run-your-first-tests-with-Gatling/lessons/15869639-a3-course-prerequisites 
+Information on the [prerequisites](https://academy.gatling.io/courses/take/Run-your-first-tests-with-Gatling/lessons/15869639-a3-course-prerequisites)
 
 ## How to use
 
@@ -24,9 +22,9 @@ Go into downloaded folder - `cd gatling-charts-highcharts-bundle-3.6.1`
 
 Go into bin - `cd bin`
 
-Run the command for a quick example script already in the downloaded folder - `./gatling.sh`
+Run this command for a quick example script already in the downloaded folder - `./gatling.sh`
 
-It should start and load a series of menus to select a Gatling test to run, select 0 -
+It should start and load a series of menus to select a Gatling test to run, select `0` -
 
 ```
 GATLING_HOME is set to /Users/wdaly/Desktop/gatling-charts-highcharts-bundle-3.6.1
