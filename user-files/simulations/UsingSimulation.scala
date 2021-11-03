@@ -4,7 +4,7 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.jdbc.Predef._
  
-class UsingCSV extends Simulation {
+class UsingSimulation extends Simulation {
  
     val httpProtocol = http
         .baseUrl("https://computer-database.gatling.io")
@@ -16,7 +16,8 @@ class UsingCSV extends Simulation {
         .userAgentHeader("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:93.0) Gecko/20100101 Firefox/93.0")
  
     object Search {
-        val searchFeeder = csv("data/search.csv").random         // .random needs to be here for some reason
+        // https://gatling.io/docs/gatling/reference/current/session/feeder/
+        val searchFeeder = csv("data/search.csv").random // .random needs to be here for some reason
         val search = exec(http("Search_Computers")
         .get("/computers"))
         .pause(3)
@@ -49,7 +50,7 @@ class UsingCSV extends Simulation {
     val users  = scenario("Users").exec(Search.search, Browse.browse)
     val admins = scenario("Admins").exec(Search.search, Browse.browse, Create.create)
 
-    val vanillaScenario = scenario("UsingCSV").exec(Search.search, Browse.browse, Create.create)
+    val vanillaScenario = scenario("UsingSimulation").exec(Search.search, Browse.browse, Create.create)
 
     setUp(
         admins.inject(atOnceUsers(7)), 

@@ -2,7 +2,7 @@ import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import scala.concurrent.duration._
 
-class Derp extends Simulation {
+class SimpleScript extends Simulation {
 
   val httpProtocol = http
     .baseUrl("https://reqres.in/api/users")
@@ -14,14 +14,13 @@ class Derp extends Simulation {
     .disableWarmUp
     .disableCaching
 
-  val getScenario = scenario("BasicSimulation - GET")
+  val getScenario = scenario("SimpleScript - GET")
     .exec(
       http("GET request")
         .get("/")
         .check(status.is(200))
     )
 
-  
   setUp(
     getScenario.inject(rampUsers(20) during (2 seconds))
   ).protocols(httpProtocol)

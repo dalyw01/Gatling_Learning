@@ -24,12 +24,6 @@ class ShouldFail extends Simulation {
         .pause(3)
     }
 
-    object Browse {
-        val browse = exec(http("Browse_Pages")
-        .get("/computers/273"))
-        .pause(3)
-    }
-
     object Create {
         val create = exec(http("Create_A_New_Computer")
        .get("/computers/new"))
@@ -42,13 +36,11 @@ class ShouldFail extends Simulation {
            .formParam("company", "1"))
     }
 
-    val users = scenario("Users").exec(Search.search, Browse.browse)
-    val admins = scenario("Admins").exec(Search.search, Browse.browse, Create.create)
+    val admins = scenario("Admins").exec(Search.search, Create.create)
 
-    val scn = scenario("ShouldFail").exec(Search.search, Browse.browse, Create.create)
+    val scn = scenario("ShouldFail").exec(Search.search, Create.create)
 
     setUp(
-        admins.inject(atOnceUsers(5)), 
-        users.inject(atOnceUsers(5))
+        admins.inject(atOnceUsers(5))
         ).protocols(httpProtocol)
 }
