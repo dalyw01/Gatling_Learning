@@ -16,9 +16,9 @@ https://academy.gatling.io/courses/take/Run-your-first-tests-with-Gatling/lesson
 
 ## How to use
 
-Verify Java is installed successfully - 
-`javac -version`
-`javac 17.0.1`
+Verify Java is installed successfully - `javac -version`
+
+You should get something like - `javac 17.0.1`
 
 Go into downloaded folder - `cd gatling-charts-highcharts-bundle-3.6.1`
 
@@ -26,7 +26,7 @@ Go into bin - `cd bin`
 
 Run the command for a quick example script already in the downloaded folder - `./gatling.sh`
 
-It should start and load a series of menus to select a Gatling test to run -
+It should start and load a series of menus to select a Gatling test to run, select 0 -
 
 ```
 GATLING_HOME is set to /Users/wdaly/Desktop/gatling-charts-highcharts-bundle-3.6.1
@@ -70,11 +70,8 @@ Generating reports...
 ================================================================================
 ```
 
-Run this command to launch the recorder - ​​./recorder.sh
+Run this command to launch the recorder - `​​./recorder.sh`
 
 B3 in lessons shows how to RECORD but also how to get a HAR file
 
-This is the site we used - https://computer-database.gatling.io/computers 
-
-https://gatling.io/docs/gatling/reference/current/session/feeder/ 
-
+This is the site we used to run tests against - https://computer-database.gatling.io/computers 
