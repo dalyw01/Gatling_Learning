@@ -1,25 +1,34 @@
+# Gatling Learning
+
+This is a repo where I play around with Gatling and get a feel for the tool
+
+## Basic Setup
+
 Good overall explanation without having to register for anything -
 https://www.youtube.com/watch?v=5MYuQBQZ8Ys
 
 I had to install Java from here - https://www.oracle.com/java/technologies/downloads/#jdk17-mac
 
-Download Gatling ZIP -
-https://gatling.io/open-source/
+Download Gatling ZIP - https://gatling.io/open-source/
 
 Register and go here for more on the prerequisites -
 https://academy.gatling.io/courses/take/Run-your-first-tests-with-Gatling/lessons/15869639-a3-course-prerequisites 
 
+## How to use
 
-Verify Java is installed
-wdaly@WDALY-FVFFC4FWQ05N ~ % javac -version
-javac 17.0.1
+Verify Java is installed successfully - 
+`javac -version`
+`javac 17.0.1`
 
-Download from here - https://gatling.io/open-source/
-Go into folder - cd gatling-charts-highcharts-bundle-3.6.1 
-Go into /bin - cd bin
+Go into downloaded folder - `cd gatling-charts-highcharts-bundle-3.6.1`
 
-Run the command for a quick example script - ./gatling.sh
-wdaly@WDALY-FVFFC4FWQ05N bin % ./gatling.sh
+Go into bin - `cd bin`
+
+Run the command for a quick example script already in the downloaded folder - `./gatling.sh`
+
+It should start and load a series of menus to select a Gatling test to run -
+
+```
 GATLING_HOME is set to /Users/wdaly/Desktop/gatling-charts-highcharts-bundle-3.6.1
 Java HotSpot(TM) 64-Bit Server VM warning: Option UseBiasedLocking was deprecated in version 15.0 and will likely be removed in a future release.
 Choose a simulation number:
@@ -59,8 +68,7 @@ Generating reports...
 > t > 1200 ms                                            0 (  0%)
 > failed                                                 0 (  0%)
 ================================================================================
-
-To view the results in their html output, navigate to something like the following - file:///Users/wdaly/Desktop/gatling-charts-highcharts-bundle-3.6.1/results/basicsimulation-20211101114003566/index.html
+```
 
 Run this command to launch the recorder - ​​./recorder.sh
 
