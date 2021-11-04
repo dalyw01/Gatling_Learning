@@ -6,11 +6,13 @@ This is a repo where I play around with Gatling and get a feel for the tool
 
 Good overall explanation of Gatling [here](https://www.youtube.com/watch?v=5MYuQBQZ8Ys)
 
+Quick article covering the basics of Gatling with some code examples [here](https://www.educative.io/edpresso/how-to-write-your-first-load-test-script-using-gatling)
+
 Install Java from [here](https://www.oracle.com/java/technologies/downloads/#jdk17-mac)
 
 Download Gatling open source [ZIP](https://gatling.io/open-source/)
 
-Information on the [prerequisites](https://academy.gatling.io/courses/take/Run-your-first-tests-with-Gatling/lessons/15869639-a3-course-prerequisites)
+Link to Gatling academy and information on the [prerequisites](https://academy.gatling.io/courses/take/Run-your-first-tests-with-Gatling/lessons/15869639-a3-course-prerequisites)
 
 ## How To Use
 
@@ -38,14 +40,11 @@ Choose a simulation number:
      [5] computerdatabase.advanced.AdvancedSimulationStep05
 0
 Select run description (optional)
-test
+HERE IS A DESCRIPTION I CAN PUT IN THAT SHOWS IN THE REPORT!
 11:40:03.583 [ERROR] i.g.h.u.SslContextsFactory - OpenSSL is enabled in the Gatling configuration but it's not available on your architecture.
 Simulation computerdatabase.BasicSimulation started...
 . . .
 Etc . . .
-Simulation computerdatabase.BasicSimulation completed in 24 seconds
-Parsing log file(s)...
-Parsing log file(s) done
 Generating reports...
 
 ================================================================================
@@ -71,6 +70,10 @@ Generating reports...
 ## Extra Information
 
 Run this command to launch Gatling recorder - `​​./recorder.sh`
+
+Using Firefox is advised for interacting with your site while recorder is active
+
+Any new recording will automatically be saved as `RecordedSimulation.scala` so make sure to rename any existing files with the same name
 
 [B3](https://academy.gatling.io/courses/take/Run-your-first-tests-with-Gatling/lessons/15869676-b3-gatling-recorder) in lessons shows how to RECORD but also how to get a HAR file
 
